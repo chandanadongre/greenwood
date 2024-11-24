@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles for image and text overlay */
+#image-container {
+    @apply absolute w-full h-64 md:h-96 lg:h-[500px] bg-cover bg-center;
+}
+
+#background-image {
+    @apply w-full h-full object-cover;
+}
+
+#text-overlay {
+    @apply absolute inset-0 flex items-center justify-center;
+}
+
+#text-overlay h1 {
+    @apply font-bold text-2xl md:text-4xl lg:text-5xl text-white text-center px-4;
+}
+section.bg-cover {
+    background-image: url('../img/bg2.jpeg');
+  }
+
+
+/* Custom styles */
+.hidden-on-load {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Ensure the header pushes content down */
+.custom-padding {
+    padding-top: 20px;
+}
+
+/* Transitions */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu transitions */
+.mobile-dropdown-toggle,
+.mobile-dropdown-content {
+    transition: all 0.3s ease;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .blog-card {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  .blog-card.visible {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  .blog-card {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.blog-card.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+.blog-content h2 {
+    @apply text-2xl font-bold mb-4;
+}
+
+.blog-content p {
+    @apply mb-6 leading-relaxed;
+}
