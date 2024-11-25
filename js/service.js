@@ -4,7 +4,8 @@ const services = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus.',
       image: './img/air.png',
       imageAlt: 'Heating and Air Repair Service',
-      link: 'repair.html'
+      link: 'repair.html',
+      links: 'repair.html'
     },
     {
       title: 'Heating & Air Replacement',
@@ -12,6 +13,7 @@ const services = [
       image: './img/air.png',
       imageAlt: 'Heating and Air Replacement Service',
       reverse: true,
+      links: 'replacement.html',
       link: 'replacement.html'
     },
     {
@@ -19,6 +21,7 @@ const services = [
       description: 'Cras rutrum tincidunt tellus in tempus. Nulla diam nulla, accumsan non ultricies ut.',
       image: './img/air.png',
       imageAlt: 'Heating and Air Management Service',
+      links: 'managaement.html',
       link: 'managaement.html'
     },
     {
@@ -27,6 +30,7 @@ const services = [
       image: './img/air.png',
       imageAlt: 'Ventilation Service',
       reverse: true,
+      links: 'ventilation.html',
       link: 'ventilation.html'
     },
     {
@@ -34,6 +38,7 @@ const services = [
       description: 'Maecenas luctus, ligula non vestibulum lacinia, risus urna convallis metus.',
       image: './img/air.png',
       imageAlt: 'Heat Pump Service',
+      links: 'heat-pump.html',
       link: 'heat-pump.html'
     }
   ];
@@ -51,13 +56,16 @@ const services = [
       const title = serviceElement.querySelector('h3');
       const description = serviceElement.querySelector('p');
       const imageLink = serviceElement.querySelector('.image-link');
+      const titleLink = serviceElement.querySelector('.title-link');
   
       image.src = service.image;
       image.alt = service.imageAlt;
       imageLink.href = service.link;
       title.textContent = service.title;
+      titleLink.href=service.link;
       description.textContent = service.description;
       imageContainer.classList.add('cursor-pointer', 'transition-transform', 'duration-300', 'hover:scale-105');
+      contentContainer.classList.add('cursor-pointer', 'transition-transform', 'duration-300', 'hover:scale-105');
 
       if (service.reverse) {
         imageContainer.classList.add('md:order-2');
