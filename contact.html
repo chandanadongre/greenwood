@@ -11,17 +11,20 @@
   <body>
     <div id="header-placeholder"></div>
     <div class="min-h-screen bg-gray-50">
-      <section class="relative h-[250px] flex items-center justify-center">
-        <img src="./img/about_bg.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
-        <div class="absolute inset-0 w-full h-full bg-black opacity-40"></div>
-    
-        <div class="relative z-10 flex flex-row items-center justify-center text-center md:text-left max-w-5xl">
-            <p class="text-white text-4xl font-bold md:w-1/2">
-                YOU WILL NEVER WANT TO LEAVE THE COMFORT OF HOME!
-            </p>
-            <img src="./img/carlogo.png" alt="Car Logo" class="w-78 h-62 object-contain mt-4 md:mt-0">
-        </div>
-      </section>
+      <section class="relative py-8 px-4 md:px-8 flex flex-col items-center text-white overflow-hidden">
+    <!-- Background Image and Overlay -->
+    <img src="./img/bg2.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 w-full h-full bg-black opacity-40"></div>
+
+    <!-- Top Content with Text and Logo -->
+    <div class="relative z-10 flex flex-col md:flex-row items-center justify-center text-center md:text-left max-w-5xl space-y-4 md:space-y-0 md:space-x-6">
+        <p class="text-lg md:text-2xl font-bold md:w-1/2 px-4 md:px-0">
+            We provide a wide range of home service repair and replacement solutions
+        </p>
+        <img src="./img/carlogo.png" alt="Car Logo" class="w-40 h-40 md:w-62 md:h-52 object-contain mt-4 md:mt-0">
+    </div>
+</section>
+
 
       <!-- Contact Banner -->
       <div class="bg-[#0d382b] py-4">
