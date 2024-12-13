@@ -91,3 +91,41 @@ section.bg-cover {
 .blog-content p {
     @apply mb-6 leading-relaxed;
 }
+#services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .service-card {
+    flex: 1 0 30%; /* Ensure cards take 30% of the row */
+    max-width: 300px; /* Ensure no card exceeds this width */
+    min-height: 320px; /* Keep all boxes at the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure all cards have the same height */
+  }
+  
+  .service-card img {
+    max-width: 100%; /* Make sure the image doesn't overflow */
+    height: auto;
+  }
+  
+  .service-footer {
+    margin-top: auto; /* Push the footer to the bottom of the card */
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      flex: 1 0 45%; /* For medium screens (like tablets), 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-card {
+      flex: 1 0 100%; /* For small screens, 1 card per row */
+    }
+  }
+  
