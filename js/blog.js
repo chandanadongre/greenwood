@@ -23,16 +23,16 @@ function createBlogCard(post, index) {
     
     card.innerHTML = `
         <div class="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 h-auto md:h-80">
-            <div class="relative overflow-hidden h-2/3">
+            <div class="relative overflow-hidden h-3/5">
                 <img src="${post.image}" alt="${post.title}" 
                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
                 <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white text-xs p-2 sm:text-sm md:text-base">
                     10th December 2024
                 </div>
             </div>
-            <div class="p-4 sm:p-6 h-full flex flex-col justify-between">
+            <div class="p-2 sm:p-6 h-full flex flex-col justify-between">
                 <h3 class="font-bold text-green-800 text-xl sm:text-2xl md:text-2xl mb-2 truncate">${post.title}</h3>
-                <p class="text-gray-600 mb-4 truncate text-sm sm:text-base">${post.description}</p>
+                <p class="text-black mb-4 truncate text-sm sm:text-base">${post.description}</p>
             </div>
         </div>
     `;

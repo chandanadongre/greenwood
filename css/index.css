@@ -91,41 +91,44 @@ section.bg-cover {
 .blog-content p {
     @apply mb-6 leading-relaxed;
 }
-#services-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .service-card {
-    flex: 1 0 30%; /* Ensure cards take 30% of the row */
-    max-width: 300px; /* Ensure no card exceeds this width */
-    min-height: 320px; /* Keep all boxes at the same height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* Ensure all cards have the same height */
-  }
-  
-  .service-card img {
-    max-width: 100%; /* Make sure the image doesn't overflow */
-    height: auto;
-  }
-  
-  .service-footer {
-    margin-top: auto; /* Push the footer to the bottom of the card */
-  }
-  
-  @media (max-width: 768px) {
+@layer components {
     .service-card {
-      flex: 1 0 45%; /* For medium screens (like tablets), 2 cards per row */
+      @apply min-h-[400px] flex flex-col bg-white rounded-lg p-6 shadow-lg hover:opacity-90 transition-opacity;
+    }
+  
+    .service-content {
+      @apply flex-1;
+    }
+  
+    .icon-container {
+      @apply flex flex-col items-center;
+    }
+  
+    .icon-bg {
+      @apply w-[100px] h-[100px] mb-4 rounded-full bg-cover bg-center;
+    }
+  
+    .service-title {
+      @apply text-xl font-semibold mb-4 text-[#1e3054];
+    }
+  
+    .service-list {
+      @apply space-y-2 text-gray-700;
+    }
+  
+    .learn-more-btn {
+      @apply bg-red-600 text-white px-6 py-2 rounded-md w-full hover:bg-red-700 transition-colors mt-6;
+    }
+  
+    .page-container {
+      @apply max-w-[1328px] mx-auto px-4 py-8;
+    }
+  
+    .header-section {
+      @apply text-center mb-8;
+    }
+  
+    .services-grid {
+      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-7xl;
     }
   }
-  
-  @media (max-width: 480px) {
-    .service-card {
-      flex: 1 0 100%; /* For small screens, 1 card per row */
-    }
-  }
-  

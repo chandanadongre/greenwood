@@ -32,54 +32,125 @@
               <p class="text-sm md:text-base text-gray-600 mb-6 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio.
               </p>
-              <button class="bg-green-700 text-white py-2 px-4 rounded hover:bg-yellow-600 transition" onclick="window.location.href='footer.html#schedule-appointment';">
+              <button class="bg-green-700 text-white py-2 px-6 rounded-full hover:bg-yellow-600 transition" onclick="window.location.href='footer.html#schedule-appointment';">
                 Request Service
               </button>
             </div>
           </div>
-          
-          <section id="services" class="relative py-8 px-4 sm:px-6 lg:px-8 -mt-32 max-w-7xl mx-auto">
-            <h2 class="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">
-              Our Heating & Air Conditioning Services
-            </h2>
         
-            <div id="services-container" class="space-y-6 md:space-y-6 space-x-6 md:space-x-12">
-              <!-- Services will be dynamically inserted here -->
+          <!-- services box section -->
+          <div class="max-w-[1328px] mx-auto px-2 py-2 mb-6 -mt-32">
+            <div class="text-center mb-4">
+                <h1 class="text-black text-3xl font-bold mb-2">Our Heating & Air Conditioning Services</h1>
+                <p class="text-gray-600 max-w-3xl mx-auto">Randy's Electric's electricians are licensed and certified to provide great electrical services in the Twin Cities metro area. Whether your electrical needs are minor or extensive. Our expert electrical services include:</p>
             </div>
-          </section>
-        
-          <template id="service-template">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 items-center animate-fade-up">
-              <div class="aspect-video w-2/3 max-w-lg mx-auto md:max-w-none service-image-container">
-                <a href="#" class="image-link block">
-                  <img 
-                    src=""
-                    alt=""
-                    class="w-3/4 h-3/4 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-              <div class="service-content">
-                <h3 class="title-link text-xl md:text-2xl font-bold text-gray-800 mb-4" onclick="window.location.href='#';"></h3>
-                <p class="text-gray-600 max-w-prose"></p>
-              </div>
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-5xl">
+            <!-- Home Upgrade -->
+            <div class="min-h-[400px] flex flex-col bg-white rounded-lg p-6 shadow-lg hover:opacity-90 transition-opacity">
+                <div class="flex-1">
+                    <div class="flex flex-col items-center">
+                        <div class="w-[300px] h-[170px] mb-4  bg-cover bg-center" style="background-image: url('./img/air.png')"></div>
+                        <h3 class="text-xl font-bold mb-4 text-black">Home Upgrade</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Box Box Replacement</li>
+                        <li>• Electrical Panel Upgrade</li>
+                        <li>• Whole House Rewiring</li>
+                        <li>• Circuit Installation</li>
+                        <li>• Smart Home Technology</li>
+                        <li>• Service Reconnection</li>
+                    </ul>
+                </div>
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full w-gull hover:bg-yellow-800 transition-colors mt-6">Learn More</button>
             </div>
-          </template>
-          <div class="ml-4 mr-4 pr-4 pl-4">
-            <p class="h-px  bg-gray-300 mt-4"></p>
-            <h2 class="text-3xl font-bold  text-gray-900 mb-6 text-center justify-center">Other Services</h2>
-            <div class="text-center justify-center flex flex-row gap-6">
-                <button class="text-xl bg-yellow-600 font-semibold text-white px-4 py-2 rounded-full shadow-lg hover:text-green-900 hover:font-bold" onclick="window.location.href='service1.html';">Plumbing Services</button>
-                <button class="text-xl bg-yellow-600 font-semibold text-white px-4 py-2 rounded-full shadow-lg hover:text-green-900 hover:font-bold" onclick="window.location.href='service1.html';">Electrical Services</button>
+
+            <!-- Home Safety -->
+            <div class="min-h-[400px] flex flex-col bg-white rounded-lg p-6 shadow-lg hover:opacity-90 transition-opacity">
+                <div class="flex-1">
+                    <div class="flex flex-col items-center">
+                        <div class="w-[300px] h-[170px] mb-4 bg-cover bg-center" style="background-image: url('./img/work2.png')"></div>
+                        <h3 class="text-xl font-bold mb-4 text-black">Home Safety</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Smoke & CO2 Detectors</li>
+                        <li>• Surge Protection</li>
+                        <li>• Security Lighting</li>
+                        <li>• Motion Monitoring</li>
+                        <li>• Electrical Inspection</li>
+                    </ul>
+                </div>
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full w-gull hover:bg-yellow-800 transition-colors mt-6">Learn More</button>
             </div>
-            <p class="h-px  bg-gray-300 mt-4"></p>
-          </div>
+
+            <!-- General Electrical Service -->
+            <div class="min-h-[400px] flex flex-col bg-white rounded-lg p-6 shadow-lg hover:opacity-90 transition-opacity">
+                <div class="flex-1">
+                    <div class="flex flex-col items-center">
+                        <div class="w-[300px] h-[170px] mb-4 bg-cover bg-center" style="background-image: url('./img/plumbing.png')"></div>
+                        <h3 class="text-xl font-bold mb-4 text-black">General Electrical Service</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• EV Charger Installation</li>
+                        <li>• Electrical Main & Meter Repair</li>
+                        <li>• Backup Power Solutions</li>
+                        <li>• Electrical Troubleshooting</li>
+                        <li>• New Appliance Wiring</li>
+                    </ul>
+                </div>
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full w-gull hover:bg-yellow-800 transition-colors mt-6">Learn More</button>
+            </div>
+
+            <!-- Lighting And Fan Solutions -->
+            <div class="min-h-[400px] flex flex-col bg-white rounded-lg p-6 shadow-lg hover:opacity-90 transition-opacity">
+                <div class="flex-1">
+                    <div class="flex flex-col items-center">
+                        <div class="w-[300px] h-[170px] mb-4 bg-cover bg-center" style="background-image: url('./img/financing.png')"></div>
+                        <h3 class="text-xl font-bold mb-4 text-black">Lighting And Fan Solutions</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Ceiling Fans & Chandeliers</li>
+                        <li>• Indoor & Outdoor Lighting</li>
+                        <li>• Recessed & Track Lighting</li>
+                        <li>• Flickering Lights</li>
+                    </ul>
+                </div>
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full w-gull hover:bg-yellow-800 transition-colors mt-6">Learn More</button>
+            </div>
+
+            <!-- Outlets And Switches -->
+            <div class="min-h-[400px] flex flex-col bg-white rounded-lg p-6 shadow-lg hover:opacity-90 transition-opacity">
+                <div class="flex-1">
+                    <div class="flex flex-col items-center">
+                        <div class="w-[300px] h-[170px] mb-4 bg-cover bg-center" style="background-image: url('./img/work3.png')"></div>
+                        <h3 class="text-xl font-bold mb-4 text-black">Outlets And Switches</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Ground Fault Circuits (GFCI)</li>
+                        <li>• Light Switches & Dimmers</li>
+                        <li>• Outlet Installation & Repair</li>
+                    </ul>
+                </div>
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full w-full hover:bg-yellow-800 transition-colors mt-6">Learn More</button>
+            </div>
+
+            <!-- Emergency Services -->
+            <div class="min-h-[400px] flex flex-col bg-white rounded-lg p-6 shadow-lg hover:opacity-90 transition-opacity">
+                <div class="flex-1">
+                    <div class="flex flex-col items-center">
+                        <div class="w-[300px] h-[170px] mb-4 bg-cover bg-center" style="background-image: url('./img/electrical.png')"></div>
+                        <h3 class="text-xl font-bold mb-4 text-black">Emergency Services</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Digital Response</li>
+                        <li>• 24/7 on-call service crew</li>
+                        <li>• Real-time pricing</li>
+                    </ul>
+                </div>
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full w-gull hover:bg-yellow-800 transition-colors mt-6">Learn More</button>
+            </div>
         </div>
-        
-          <script src="./js/service.js"></script>
                
     </div>
     <div class="mt-60 md:-mt-6 lg:-mt-6 xs:mt-60"></div>
