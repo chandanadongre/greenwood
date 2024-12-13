@@ -17,7 +17,7 @@
         <img src="./img/blog_bg.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 w-full h-full bg-black opacity-60"></div>
     
-        <div class="relative z-10 flex flex-col items-center justify-center text-center md:text-left max-w-5xl h-full">
+        <div class="relative z-10 flex flex-col items-center justify-center text-center md:text-left max-w-5xl h-full lg:ml-28 lg:mr-28 lg:pl-24 lg:pr-24 ">
             <h1 class="text-4xl font-bold text-center mt-6 p-6">
                 BLOGS
             </h1>
@@ -25,12 +25,12 @@
         </div>
     </section>
 
-    <main class="container mx-auto px-4 py-12">
-        <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <main class="container mx-auto px-4 py-12  ">
+        <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:ml-28 lg:mr-28 lg:pl-24 lg:pr-24 ">
             <!-- Blog posts will be dynamically inserted here -->
         </div>
 
-        <div class="flex justify-center mt-12 mb-12">
+        <div class="flex justify-center mt-12 mb-6">
             <button id="load-more-btn" 
                     class="group bg-green-700 text-white px-8 py-3 rounded-full hover:bg-white hover:text-green-800 border-2 border-transparent hover:border-green-700 transition-all duration-300 flex items-center space-x-2">
                 <span>Load More Blogs</span>
@@ -38,6 +38,7 @@
         </div>
     </main>
     <script src="js/blogPage.js"></script>
+    <div class="mt-60 md:-mt-6 lg:-mt-6 xs:mt-20"></div>
     <div id="footer-placeholder"></div>
 </body>
 </html>
