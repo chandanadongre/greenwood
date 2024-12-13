@@ -16,7 +16,9 @@
     <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-lg transition-all duration-300 ease-in-out">
         <div class="flex flex-col md:flex-row items-center justify-between px-4 py-2 md:py-4 space-y-4 md:space-y-0">
             <!-- Logo -->
-            <img src="./img/header_logo.png" alt="header logo" class="h-12 sm:h-16 md:h-28 transition-all duration-300">
+            <img src="./img/header_logo.png" alt="header logo" class="h-12 sm:h-16 md:h-28 transition-all duration-300 cursor-pointer" onclick="window.location.href='index.html'">
+
+              
 
             <!-- Contact Info -->
             <div class="hidden md:flex flex-col items-center space-y-2 text-center">
@@ -43,21 +45,21 @@
 
                     <!-- Desktop Menu -->
                     <ul class="hidden md:flex space-x-6 text-sm">
-                        <li><a href="./index.html" class="block py-2 hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HOME</a></li>
-                        <li><a href="./about.html" class="block py-2 hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">ABOUT US</a></li>
+                        <li><a href="./index.html" class="block py-2 hover:font-bold hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HOME</a></li>
+                        <li><a href="./about.html" class="block py-2 hover:font-bold hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">ABOUT US</a></li>
                         <li class="group relative">
-                            <button class="dropdown-toggle block py-2 hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300" onclick="window.location.href='./services_areas.html';">
-                                AREAS SERVICED &#709;
+                            <button class="dropdown-toggle block py-2 hover:font-bold hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300" onclick="window.location.href='./services_areas.html';">
+                                AREAS SERVICED &#11167;
                             </button>
-                            <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg py-2 w-40 transition-all duration-300">
+                            <ul class="absolute hidden group-hover:block hover:font-bold bg-green-900 text-white shadow-lg py-2 w-40 transition-all duration-300">
                                 <li><a href="./area1.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 transition-all duration-300">CHICAGO</a></li>
                                 <li><a href="./area1.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 transition-all duration-300">LAS VEGAS</a></li>
                                 <li><a href="./area1.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 transition-all duration-300">NEW YORK</a></li>
                             </ul>
                         </li>
                         <li class="group relative">
-                            <button class="dropdown-toggle block py-2 hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300" onclick="window.location.href='./services.html';">
-                                SERVICES &#709;
+                            <button class="dropdown-toggle block py-2 hover:font-bold hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300" onclick="window.location.href='./services.html';">
+                                SERVICES &#11167;
                             </button>
                             <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg py-2 w-40 transition-all duration-300">
                                 <li><a href="./service1.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 transition-all duration-300">HEATING & AIR</a></li>
@@ -65,42 +67,42 @@
                                 <li><a href="./service1.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 transition-all duration-300">PLUMBING</a></li>
                             </ul>
                         </li>
-                        <li><a href="./blog.html" class="block py-2 hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">BLOG</a></li>
-                        <li><a href="./contact.html" class="block py-2 hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">CONTACT</a></li>
+                        <li><a href="./blog.html" class="block py-2 hover:font-bold hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">BLOG</a></li>
+                        <li><a href="./contact.html" class="block py-2 hover:font-bold hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">CONTACT</a></li>
                     </ul>
                 </div>
                 
                 <!-- Mobile Menu -->
                 <div id="mobile-menu" class="hidden md:hidden text-white py-4 transition-all duration-300">
-                    <a href="./index.html" class="block py-2 px-4 hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link ">HOME</a>
-                    <a href="./about.html" class="block py-2 px-4 hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link ">ABOUT US</a>
+                    <a href="./index.html" class="block py-2 px-4 hover:font-bold hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link ">HOME</a>
+                    <a href="./about.html" class="block py-2 px-4 hover:font-bold hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link ">ABOUT US</a>
                     
                     <div class="relative">
-                        <button class="mobile-dropdown-toggle w-full text-left px-4 py-2 hover:bg-white hover:text-green-900 flex justify-between items-center transition-all duration-300" onclick="window.location.href='./services_areas.html';">
+                        <button class="mobile-dropdown-toggle w-full hover:font-bold text-left px-4 py-2 hover:bg-white hover:text-green-900 flex justify-between items-center transition-all duration-300" onclick="window.location.href='./services_areas.html';">
                             AREAS SERVICED
-                            <span class="transform transition-transform duration-300">&#709;</span>
+                            <span class="transform transition-transform duration-300">&#11167;</span>
                         </button>
                         <div class="mobile-dropdown-content hidden bg-green-800 pl-8 transition-all duration-300">
-                            <a href="./area1.html" class="block py-2 hover:bg-white hover:text-green-900 transition-all duration-300">CHICAGO</a>
-                            <a href="./area1.html" class="block py-2 hover:bg-white hover:text-green-900 transition-all duration-300">LAS VEGAS</a>
-                            <a href="./area1.html" class="block py-2 hover:bg-white hover:text-green-900 transition-all duration-300">NEW YORK</a>
+                            <a href="./area1.html" class="block py-2 hover:font-bold hover:bg-white hover:text-green-900 transition-all duration-300">CHICAGO</a>
+                            <a href="./area1.html" class="block py-2 hover:font-bold hover:bg-white hover:text-green-900 transition-all duration-300">LAS VEGAS</a>
+                            <a href="./area1.html" class="block py-2 hover:font-bold hover:bg-white hover:text-green-900 transition-all duration-300">NEW YORK</a>
                         </div>
                     </div>
                     
                     <div class="relative">
-                        <button class="mobile-dropdown-toggle w-full text-left px-4 py-2 hover:bg-white hover:text-green-900 flex justify-between items-center transition-all duration-300" onclick="window.location.href='./services.html';">
+                        <button class="mobile-dropdown-toggle w-full hover:font-bold text-left px-4 py-2 hover:bg-white hover:text-green-900 flex justify-between items-center transition-all duration-300" onclick="window.location.href='./services.html';">
                             SERVICES
-                            <span class="transform transition-transform duration-300">&#709;</span>
+                            <span class="transform transition-transform duration-300">&#11167;</span>
                         </button>
                         <div class="mobile-dropdown-content hidden bg-green-800 pl-8 transition-all duration-300">
-                            <a href="./service1.html" class="block py-2 hover:bg-white hover:text-green-900 transition-all duration-300">HEATING & AIR</a>
-                            <a href="./service1.html" class="block py-2 hover:bg-white hover:text-green-900 transition-all duration-300">ELECTRICAL</a>
-                            <a href="./service1.html" class="block py-2 hover:bg-white hover:text-green-900 transition-all duration-300">PLUMBING</a>
+                            <a href="./service1.html" class="block hover:font-bold py-2 hover:bg-white hover:text-green-900 transition-all duration-300">HEATING & AIR</a>
+                            <a href="./service1.html" class="block hover:font-bold py-2 hover:bg-white hover:text-green-900 transition-all duration-300">ELECTRICAL</a>
+                            <a href="./service1.html" class="block hover:font-bold py-2 hover:bg-white hover:text-green-900 transition-all duration-300">PLUMBING</a>
                         </div>
                     </div>
                     
-                    <a href="./blog.html" class="block py-2 px-4 hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link ">BLOG</a>
-                    <a href="./contact.html" class="block py-2 px-4 hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link">CONTACT</a>
+                    <a href="./blog.html" class="block py-2 px-4 hover:font-bold hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link ">BLOG</a>
+                    <a href="./contact.html" class="block py-2 px-4 hover:font-bold hover:bg-white hover:text-green-900 transition-all duration-300 mobile-dropdown-content mobile-menu-link">CONTACT</a>
                 </div>
             </div>
         </nav>
